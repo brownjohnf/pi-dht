@@ -22,12 +22,14 @@ var sensor = {
           temp;
 
         request(url, function(err, res, body) {
-          console.log(err, res, body);
+          if (err != undefined) {
+            console.log(err, res, body);
+          }
         });
 
         setTimeout(function () {
             sensor.read();
-        }, 2000);
+        }, 30000);
     }
 };
 
