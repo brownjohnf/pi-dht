@@ -4,7 +4,8 @@
   "description": "",
   "main": "main.js",
   "dependencies": {
-    "node-dht-sensor": "0.0.11"
+    "node-dht-sensor": "0.0.11",
+    "request": "2.72.x"
   },
   "devDependencies": {},
   "scripts": {
