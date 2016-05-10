@@ -32,6 +32,7 @@ var sensor = {
       '&temp=' +
       temp
       ;
+    console.log(url);
 
     request(url, function(err, res, body) {
       if (err != undefined) {
