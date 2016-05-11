@@ -1,4 +1,4 @@
-FROM      resin/%%RESIN_MACHINE_NAME%%-node:5.7
+FROM      resin/%%RESIN_MACHINE_NAME%%-node:5.11
 
 RUN       wget http://www.airspayce.com/mikem/bcm2835/bcm2835-1.50.tar.gz && \
           tar zxvf bcm2835-1.50.tar.gz && \

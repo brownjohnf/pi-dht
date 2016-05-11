@@ -4,11 +4,12 @@ var
   sparkPrivKey = process.env.PIDHT_SPARKFUN_PRIVATE_KEY,
   sparkPubKey  = process.env.PIDHT_SPARKFUN_PUBLIC_KEY,
   interval     = process.env.PIDHT_INTERVAL
+  sensorCode   = process.env.PIDHT_SENSOR_CODE // 11 or 22
   ;
 
 var sensor = {
   initialize: function () {
-    return sensorLib.initialize(22, 4);
+    return sensorLib.initialize(sensorCode, 4);
   },
   read: function () {
     var
