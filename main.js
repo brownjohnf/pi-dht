@@ -9,7 +9,7 @@ var
 
 var sensor = {
   initialize: function () {
-    return sensorLib.initialize(sensorCode, 4);
+    return sensorLib.initialize(parseInt(sensorCode), 4);
   },
   read: function () {
     var
