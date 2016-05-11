@@ -32,11 +32,10 @@ var sensor = {
       '&temp=' +
       temp
       ;
-    console.log(url);
 
     request(url, function(err, res, body) {
       if (err != undefined) {
-        console.log(err, res, body);
+        console.log(url, err, res, body);
       }
     });
 
