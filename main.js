@@ -3,8 +3,8 @@ var
   request   = require('request')
   sparkPrivKey = process.env.PIDHT_SPARKFUN_PRIVATE_KEY,
   sparkPubKey  = process.env.PIDHT_SPARKFUN_PUBLIC_KEY,
-  interval     = process.env.PIDHT_INTERVAL
-  sensorCode   = process.env.PIDHT_SENSOR_CODE // 11 or 22
+  interval     = process.env.PIDHT_INTERVAL,
+  sensorCode   = process.env.PIDHT_SENSOR_CODE
   ;
 
 var sensor = {
