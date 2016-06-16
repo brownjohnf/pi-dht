@@ -31,4 +31,5 @@ sensors via [Resin.io](https://resin.io).
   * `PIDHT_SPARKFUN_PRIVATE_KEY=<data.sparkfun.com private key>`
   * `PIDHT_SPARKFUN_PUBLIC_KEY=<data.sparkfun.com public key>`
   * `PIDHT_INTERVAL=<integer ms interval between readings>`
+  * `PIDHT_SENSOR_CODE=<22 for DHT22 or 11 for DHT11>`
 
