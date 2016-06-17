@@ -15,14 +15,16 @@ var sensor = {
     var
       readout = sensorLib.read(),
       url,
-      temp,
+      tempC,
+      tempF,
       humidity
       ;
 
-    temp = readout.temperature.toFixed(2);
+    tempC = readout.temperature.toFixed(2);
     humidity = readout.humidity.toFixed(2);
+    tempF = tempC * 9.0 / 5.0 + 32.0;
 
-    console.log('Temperature: ' + temp + 'C, ' + 'humidity: ' + humidity + '%');
+    console.log(tempF + 'F, ' + tempC + 'C, ' + humidity + '% hum');
 
     url = 'https://data.sparkfun.com/input/' +
       sparkPubKey +
@@ -31,7 +33,7 @@ var sensor = {
       '&humidity=' +
       humidity +
       '&temp=' +
-      temp
+      tempC
       ;
 
     request(url, function(err, res, body) {
